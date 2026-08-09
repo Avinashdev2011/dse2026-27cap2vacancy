@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedAvailability = availabilitySelect.value;
     const selectedSort = sortSelect.value;
 
-    const csKeywords = ['computer', 'information technology', 'artificial intelligence', 'data science', 'cyber', 'software', 'machine learning'];
+    const csKeywords = ['computer', 'information technology', 'artificial intelligence', 'data science', 'cyber', 'software', 'machine learning', 'robotics', 'iot'];
     const entcKeywords = ['electronics', 'telecommunication', 'entc', 'communication'];
     const mechKeywords = ['mechanical', 'automobile', 'mechatronics'];
     const civilKeywords = ['civil', 'construction', 'structural'];
