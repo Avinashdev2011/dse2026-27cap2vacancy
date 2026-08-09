@@ -837,8 +837,8 @@ body {
 .matrix-seats .g-seat { color: var(--cyan); }
 .matrix-seats .l-seat { color: var(--purple); }
 
-/* AD SLOTS CONTAINER STYLING */
-.ad-slot-wrapper {
+/* CONTENT SLOTS STYLING */
+.widget-slot-wrapper {
   margin: 1.5rem auto;
   text-align: center;
   display: flex;
@@ -849,16 +849,7 @@ body {
   clear: both;
 }
 
-.ad-label {
-  font-size: 0.65rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-dim);
-  margin-bottom: 0.25rem;
-}
-
-.ad-banner-frame {
+.widget-frame {
   display: inline-block;
   background: rgba(255, 255, 255, 0.02);
   border: 1px dashed var(--border-color);
@@ -867,7 +858,15 @@ body {
   min-height: 50px;
 }
 
-.sidebar-ad {
+/* Responsive top slot: show desktop on large, mobile on small */
+#slot-top-a { display: inline-block; }
+#slot-top-b { display: none; }
+@media (max-width: 768px) {
+  #slot-top-a { display: none !important; }
+  #slot-top-b { display: inline-block !important; }
+}
+
+.sidebar-widgets {
   position: sticky;
   top: 90px;
   display: flex;
@@ -877,7 +876,7 @@ body {
 }
 
 @media (max-width: 1100px) {
-  .sidebar-ad {
+  .sidebar-widgets {
     display: none;
   }
 }

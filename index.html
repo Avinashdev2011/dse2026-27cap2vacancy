@@ -35,11 +35,10 @@
   <!-- Main Container -->
   <div class="container" style="margin-top: 1.5rem;">
     
-    <!-- Top Responsive Ad Slots -->
-    <div class="ad-slot-wrapper">
-      <div class="ad-label">Advertisement</div>
-      <div id="ad-top-banner" class="ad-banner-frame" style="min-width: 728px; min-height: 90px;"></div>
-      <div id="ad-top-mobile" class="ad-banner-frame" style="display: none; min-width: 320px; min-height: 50px;"></div>
+    <!-- Top Content Slots -->
+    <div class="widget-slot-wrapper">
+      <div id="slot-top-a" class="widget-frame" style="min-width: 728px; min-height: 90px;"></div>
+      <div id="slot-top-b" class="widget-frame" style="min-width: 320px; min-height: 50px;"></div>
     </div>
 
     <!-- Hero Header -->
@@ -156,10 +155,9 @@
 
         </div>
 
-        <!-- Mid-Page Banner Ad 468x60 -->
-        <div class="ad-slot-wrapper">
-          <div class="ad-label">Advertisement</div>
-          <div id="ad-banner-468x60" class="ad-banner-frame" style="min-width: 468px; min-height: 60px;"></div>
+        <!-- Mid Content Slot -->
+        <div class="widget-slot-wrapper">
+          <div id="slot-mid-a" class="widget-frame" style="min-width: 468px; min-height: 60px;"></div>
         </div>
 
         <!-- Results Header Bar -->
@@ -177,10 +175,9 @@
         <!-- Cards View Container -->
         <div id="cards-view" class="cards-grid"></div>
 
-        <!-- Inline Content Box Ad 300x250 -->
-        <div class="ad-slot-wrapper" style="margin: 2rem 0;">
-          <div class="ad-label">Sponsored Content</div>
-          <div id="ad-inline-300x250" class="ad-banner-frame" style="min-width: 300px; min-height: 250px;"></div>
+        <!-- Inline Content Slot -->
+        <div class="widget-slot-wrapper" style="margin: 2rem 0;">
+          <div id="slot-mid-b" class="widget-frame" style="min-width: 300px; min-height: 250px;"></div>
         </div>
 
         <!-- Table View Container -->
@@ -229,15 +226,13 @@
 
       </div>
 
-      <!-- Sidebar Right Banner Ads 160x600 & 160x300 -->
-      <aside class="sidebar-ad">
-        <div class="ad-slot-wrapper" style="margin: 0;">
-          <div class="ad-label">Ad 160x600</div>
-          <div id="ad-sidebar-160x600" class="ad-banner-frame" style="min-width: 160px; min-height: 600px;"></div>
+      <!-- Sidebar Content Slots -->
+      <aside class="sidebar-widgets">
+        <div class="widget-slot-wrapper" style="margin: 0;">
+          <div id="slot-side-a" class="widget-frame" style="min-width: 160px; min-height: 600px;"></div>
         </div>
-        <div class="ad-slot-wrapper" style="margin: 0;">
-          <div class="ad-label">Ad 160x300</div>
-          <div id="ad-sidebar-160x300" class="ad-banner-frame" style="min-width: 160px; min-height: 300px;"></div>
+        <div class="widget-slot-wrapper" style="margin: 0;">
+          <div id="slot-side-b" class="widget-frame" style="min-width: 160px; min-height: 300px;"></div>
         </div>
       </aside>
 
@@ -259,9 +254,8 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="ad-slot-wrapper">
-        <div class="ad-label">Advertisement</div>
-        <div id="ad-footer-banner" class="ad-banner-frame" style="min-width: 728px; min-height: 90px;"></div>
+      <div class="widget-slot-wrapper">
+        <div id="slot-foot-a" class="widget-frame" style="min-width: 728px; min-height: 90px;"></div>
       </div>
       <p style="margin-top: 1.5rem;">DSE CAP Round II Vacancy Portal &copy; 2026-2027 | State CET Cell Direct Second Year Engineering</p>
       <p style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.4rem;">Data parsed from official provisional vacancy matrix publication.</p>
@@ -270,7 +264,7 @@
 
   <!-- Data & Logic Scripts -->
   <script src="data.js"></script>
-  <script src="ads.js"></script>
+  <script src="widget.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
